@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChallengeTechAndSolve</name>
+    </assembly>
+    <members>
+        <member name="T:ChallengeTechAndSolve.Controllers.ParticipantController">
+            <summary>
+            Participant controller
+            </summary>
+        </member>
+        <member name="M:ChallengeTechAndSolve.Controllers.ParticipantController.#ctor(ChallengeTechAndSolve.Application.Contracts.IServices.IProcessInformationService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileProcessService"></param>
+        </member>
+        <member name="M:ChallengeTechAndSolve.Controllers.ParticipantController.Process(ChallengeTechAndSolve.ViewModels.ParticipantInformationViewModel)">
+            <summary>
+            Process information
+            </summary>
+            <param name="participantInformationViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ChallengeTechAndSolve.Resources.WebUiResources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Document">
+            <summary>
+              Busca una cadena traducida similar a Identity document.
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.InformationFile">
+            <summary>
+              Busca una cadena traducida similar a File.
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Validations_MaxLength">
+            <summary>
+              Busca una cadena traducida similar a The maximum length of {0} is {1}..
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Validations_Required">
+            <summary>
+              Busca una cadena traducida similar a The {0} is required..
+            </summary>
+        </member>
+        <member name="T:ChallengeTechAndSolve.ViewModels.ParticipantInformationViewModel">
+            <summary>
+            Participant information
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.ViewModels.ParticipantInformationViewModel.Document">
+            <summary>
+            Participant document
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.ViewModels.ParticipantInformationViewModel.File">
+            <summary>
+            Information file
+            </summary>
+        </member>
+    </members>
+</doc>
