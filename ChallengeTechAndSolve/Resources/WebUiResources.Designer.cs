@@ -61,6 +61,15 @@ namespace ChallengeTechAndSolve.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a This {0} extension is not allowed!, Only txt files allowed..
+        /// </summary>
+        public static string AllowTxt {
+            get {
+                return ResourceManager.GetString("AllowTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Identity document.
         /// </summary>
         public static string Document {
@@ -79,6 +88,15 @@ namespace ChallengeTechAndSolve.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ([0-9]+).
+        /// </summary>
+        public static string RegularExpressionValidNumber {
+            get {
+                return ResourceManager.GetString("RegularExpressionValidNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a The maximum length of {0} is {1}..
         /// </summary>
         public static string Validations_MaxLength {
@@ -93,6 +111,15 @@ namespace ChallengeTechAndSolve.Resources {
         public static string Validations_Required {
             get {
                 return ResourceManager.GetString("Validations_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Please enter valid Number.
+        /// </summary>
+        public static string ValidNumber {
+            get {
+                return ResourceManager.GetString("ValidNumber", resourceCulture);
             }
         }
     }

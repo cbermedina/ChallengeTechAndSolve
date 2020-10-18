@@ -37,7 +37,6 @@
         [HttpPost("Process")]
         public async Task<ActionResult> Process([FromForm] ParticipantInformationViewModel participantInformationViewModel)
         {
-            throw new System.Exception("Hola mundo");
             return await _fileProcessService.Process(participantInformationViewModel.Map());
         }
         #endregion

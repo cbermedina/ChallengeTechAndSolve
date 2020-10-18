@@ -117,16 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllowTxt" xml:space="preserve">
+    <value>This {0} extension is not allowed!, Only txt files allowed.</value>
+  </data>
   <data name="Document" xml:space="preserve">
     <value>Identity document</value>
   </data>
   <data name="InformationFile" xml:space="preserve">
     <value>File</value>
   </data>
+  <data name="RegularExpressionValidNumber" xml:space="preserve">
+    <value>([0-9]+)</value>
+  </data>
   <data name="Validations_MaxLength" xml:space="preserve">
     <value>The maximum length of {0} is {1}.</value>
   </data>
   <data name="Validations_Required" xml:space="preserve">
     <value>The {0} is required.</value>
+  </data>
+  <data name="ValidNumber" xml:space="preserve">
+    <value>Please enter valid Number</value>
   </data>
 </root>

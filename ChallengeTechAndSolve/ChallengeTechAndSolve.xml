@@ -38,6 +38,11 @@
               búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
             </summary>
         </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.AllowTxt">
+            <summary>
+              Busca una cadena traducida similar a This {0} extension is not allowed!, Only txt files allowed..
+            </summary>
+        </member>
         <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Document">
             <summary>
               Busca una cadena traducida similar a Identity document.
@@ -48,6 +53,11 @@
               Busca una cadena traducida similar a File.
             </summary>
         </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.RegularExpressionValidNumber">
+            <summary>
+              Busca una cadena traducida similar a ([0-9]+).
+            </summary>
+        </member>
         <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Validations_MaxLength">
             <summary>
               Busca una cadena traducida similar a The maximum length of {0} is {1}..
@@ -56,6 +66,11 @@
         <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.Validations_Required">
             <summary>
               Busca una cadena traducida similar a The {0} is required..
+            </summary>
+        </member>
+        <member name="P:ChallengeTechAndSolve.Resources.WebUiResources.ValidNumber">
+            <summary>
+              Busca una cadena traducida similar a Please enter valid Number.
             </summary>
         </member>
         <member name="T:ChallengeTechAndSolve.ViewModels.ParticipantInformationViewModel">
