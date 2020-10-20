@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mappers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ChallengeTechAndSolve.DataAccess.Contracts\ChallengeTechAndSolve.DataAccess.Contracts.csproj" />
   </ItemGroup>
 

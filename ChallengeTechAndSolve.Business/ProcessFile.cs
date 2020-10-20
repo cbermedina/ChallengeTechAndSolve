@@ -23,14 +23,12 @@
         {
             using StreamReader reader = new StreamReader(file.OpenReadStream());
             string fileLine = string.Empty;
-            int day = 1;
             while (reader.Peek() >= 0)
             {
                 fileLine = await reader.ReadLineAsync();
                 if (!string.IsNullOrEmpty(fileLine) && Validations.IsNaturalNumber(fileLine))
                 {
                     lstInformationFile.Add(Convert.ToInt32(fileLine));
-                    day++;
                 }
                 fileLine = string.Empty;
             }

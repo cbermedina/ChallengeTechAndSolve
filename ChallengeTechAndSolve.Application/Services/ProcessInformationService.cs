@@ -25,8 +25,7 @@
         {
             await _traceabilityRepository.AddAsync(participantInformationDto.Map());
             MemoryStream resultProcess = await FileProcess(participantInformationDto);
-            var result = new FileStreamResult(resultProcess, "text/plain")
-            { FileDownloadName = CommonInformation.FileOutPut };
+            var result = new FileStreamResult(resultProcess, "text/plain") { FileDownloadName = CommonInformation.FileOutPut };
             return result;
         }
     }

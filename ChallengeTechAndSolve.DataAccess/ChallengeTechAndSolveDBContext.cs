@@ -4,6 +4,8 @@
     using ChallengeTechAndSolve.DataAccess.Contracts.Entities;
     using ChallengeTechAndSolve.DataAccess.EntityConfig;
     using Microsoft.EntityFrameworkCore;
+    using System.ComponentModel.DataAnnotations;
+
     public class ChallengeTechAndSolveDBContext : DbContext, IChallengeTechAndSolveDBContext
     {
         public DbSet<TraceabilityEntity> TraceabilityEntities { get; set; }
