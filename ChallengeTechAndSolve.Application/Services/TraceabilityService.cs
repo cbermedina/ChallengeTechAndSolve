@@ -15,9 +15,10 @@
         {
             _traceabilityRepository = traceabilityRepository;
         }
-        public Task<int> AddAsync(TraceabilityDto traceabilityDto)
+        public async Task<TraceabilityDto> AddAsync(TraceabilityDto traceabilityDto)
         {
-            return _traceabilityRepository.AddAsync(traceabilityDto.Map());
+            await _traceabilityRepository.AddAsync(traceabilityDto.Map());
+            return traceabilityDto;
         }
 
         public async Task<List<TraceabilityDto>> GetAllAsync()
