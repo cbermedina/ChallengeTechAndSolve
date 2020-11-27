@@ -22,6 +22,12 @@
             <param name="participantInformationViewModel"></param>
             <returns></returns>
         </member>
+        <member name="M:ChallengeTechAndSolve.Controllers.ParticipantController.GetParticipant">
+             <summary>
+            Get Process information
+             </summary>
+             <returns></returns>
+        </member>
         <member name="T:ChallengeTechAndSolve.Resources.WebUiResources">
             <summary>
               Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.

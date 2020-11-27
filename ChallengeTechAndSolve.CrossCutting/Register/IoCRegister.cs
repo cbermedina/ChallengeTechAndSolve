@@ -55,11 +55,12 @@
             IConfiguration _configuration = serviceProvider.GetService<IConfiguration>();
             services.AddTransient<IChallengeTechAndSolveDBContext, ChallengeTechAndSolveDBContext>();
             services.AddDbContext<ChallengeTechAndSolveDBContext>(options => options.UseSqlServer(_configuration.GetConnectionString("DataBaseConnection")));
-            var logService = serviceProvider.GetService<ILogService>();
-            services.AddMvc(options =>
-            {
-                options.Filters.Add(new HandleExceptionAttribute(logService));
-            });
+           // var logService = serviceProvider.GetService<ILogService>();
+            //services.AddMvc(options =>
+            //{
+            //    options.Filters.Add(new HandleExceptionAttribute(logService));
+            //});   
+            services.AddMvc();
             return services;
         }
     }

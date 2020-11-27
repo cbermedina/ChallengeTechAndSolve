@@ -3,6 +3,9 @@
     using ChallengeTechAndSolve.DataAccess.Contracts;
     using ChallengeTechAndSolve.DataAccess.Contracts.Entities;
     using ChallengeTechAndSolve.DataAccess.Contracts.IRepositories;
+    using Microsoft.EntityFrameworkCore;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
     public class TraceabilityRepository : ITraceabilityRepository
     {
@@ -18,11 +21,19 @@
         #endregion
 
         #region Methods
-        public async Task<int> AddAsync(TraceabilityEntity model)
+        public async Task<TraceabilityEntity> AddAsync(TraceabilityEntity model)
         {
             await _challengeTechAndSolveDBContext.TraceabilityEntities.AddAsync(model);
             int result = await _challengeTechAndSolveDBContext.SaveChangesAsync();
-            return result;
+            return model;
+        }
+        public async Task<List<TraceabilityEntity>> GetAllAsync()
+        {
+            return await  _challengeTechAndSolveDBContext.TraceabilityEntities.ToListAsync();
+        }
+        public async Task<TraceabilityEntity> GetByIdAsync(string id)
+        {
+            return await _challengeTechAndSolveDBContext.TraceabilityEntities.FirstOrDefaultAsync(w=>w.Document==id);
         }
         #endregion
     }
